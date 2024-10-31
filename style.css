@@ -58,7 +58,11 @@ aside{
 
 }
 
+body{
 
+    margin: 0;
+    padding:0;
+}
 footer{
 
 background-color: #DBB2C5;
