@@ -1,3 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+main{
+    display: flex;
+    background-color: #B269DB;
+    grid-area: main;
+}
+img{
+    width: 25vw;
+    height: auto;
+}
+p{
+    text-align: justify;
+    padding: 20px;
+}
+
+aside{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #DB8269;
+    grid-area: aside;
+    
+}
+@media (max-width:768px) {
+    img{
+    width: 100vw;
+    height: auto;
+    }
+    main{
+        flex-direction: column;
+    }
+
+    aside{
+        display: block;
+        
+        font-size:  80%;
+    }
+}
+
+
 #parent{
 
     display:grid;
@@ -40,39 +83,28 @@ ul{
     
 }
 
-main{
-    display: flex;
-    background-color: #B269DB;
-    grid-area: main;
-    
-   
+a{
 
-    
-}
-aside{
-    background-color: #DB8269;
-    grid-area: aside;
-    text-align: center;
-
-    
-
+    text-decoration: none;
+    color:white;
 }
 
-body{
+a:hover{
 
-    margin: 0;
-    padding:0;
+    color:blue;
 }
+
 footer{
 
 background-color: #DBB2C5;
 grid-area: footer;
 
+
 }
 
 .imgresponsive{
 
-    max-width: 60%; 
+    max-width: 80%; 
     height: auto;
     align-items: center;
     border-radius: 5%;
@@ -90,18 +122,42 @@ grid-area: footer;
    
 .RS{
     display: flex;
-    max-width: 20%;
-    margin-left: 80%;
+    justify-content: center;
+    padding:3vh;
+
+}
+
+.rs{
+
+    max-width: 25%;
 }
 
 form{
-
-max-width: 20%;
+display: flex;
+flex-direction: column;
+row-gap: 1vh;
+max-width: 40%;
   margin: 0 auto;
+}
+
+textarea{
+    max-width: 100%;
 }
 
 .Crédits, .MentionsL{
 
-margin-left: 50%;
+margin-left: 40%;
 margin-bottom: 0 auto;
+}
+
+
+.indexperso{
+
+    text-align: center;
+    font-family: novecento-sans-condensed, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    justify-content: space-between;
+    
+
 }
